@@ -1,0 +1,40 @@
+.must {
+    color: red;
+}
+
+.prview-content {
+    text-align: center;
+}
+
+.prview {
+    width: 200px;
+    height: 200px;
+}
+
+.prview-item {
+    width: 200px;
+    height: 200px;
+}
+
+.layui-upload-btn {
+    margin-top: -110%;
+}
+
+.layui-upload-choose {
+    display: none;
+}
+
+.prview {
+    border: 1px gray solid;
+}
+
+.img-remove {
+    margin-left: 183px;
+    font-size: 20px;
+    color: red;
+}
+
+.remove-content {
+    position: absolute;
+    display: none;
+}

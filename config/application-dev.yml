@@ -1,0 +1,56 @@
+#----------------------------开发环境配置-----------------------------
+#tomcat配置
+server:
+  port: 80
+  #context-path: 
+  session-timeout: 60
+  uri-encoding: UTF-8
+  tomcat:
+    max-threads: 100
+    min-spare-threads: 20
+  
+#数据源配置
+spring:
+  redis:
+    host: 127.0.0.1
+    port: 6379 
+    pool:
+      max-active: 20
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/findengdev?characterEncoding=utf-8&useSSL=true
+    username: root
+    password: root
+    driverClassName: com.mysql.jdbc.Driver
+    max-active: 50
+    max-idle: 6
+    min-idle: 2
+    initial-size: 6
+    freemarker:
+      settings:
+        template_update_delay: 0
+        
+#jpa配置    
+  jpa:
+    hibernate:
+      ddl-auto: 
+    show-sql: true
+
+#服务器根路径
+ServerPath: http://bingco.imwork.net/
+    
+#wechat配置
+wechat:
+  #微信基础设置
+  appId: wx26601279d2f10e5f
+  appSecret: 5fe547d88cdeeeff53e445348addb5e4
+  #微信开发者服务器验证令牌
+  token: bingco
+  #客服OpenId
+  customerServiceOpenId: orNb1wa0USl-PUFlgW5HWoxauf1A
+  #本公司员工user_id配置
+  ourEmployees: 108,112,114,116,117,119,120,121,125,131
+  #启动新关注用户欢迎语
+  enableWelcome: true
+  #欢迎语
+  welcomeSpeech: 你好,欢迎加入繁灯网
+  

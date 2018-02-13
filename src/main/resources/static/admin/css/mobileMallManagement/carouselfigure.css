@@ -1,0 +1,30 @@
+thead {
+    background-color: rgba(221, 221, 221, 0.70);
+}
+
+.shanchu {
+    position: absolute;
+    top: -9px;
+    right: 3%;
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    background: url(../img/shanchu.png) center center/9px 9px no-repeat rgba(0, 0, 0, .7);
+    text-indent: -999em;
+    z-index: 2;
+    display: none;
+}
+
+.pic {
+    content: '';
+    display: block;
+    margin: 3px auto 3px;
+    width: 90%;
+    height: 100px;
+    background: url(../img/xaingji.png) center center no-repeat;
+    background-size: 60px auto;
+}
+
+.pic:hover {
+    cursor: pointer;
+}

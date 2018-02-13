@@ -1,0 +1,289 @@
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    line-height: normal;
+    font-family: "微软雅黑";
+    background-image: url("../../asset/img/footer.png");
+    background-size: 100% 100%;
+}
+
+footer .footerA {
+    display: block;
+    text-align: center;
+    color: #272724;
+    line-height: 1rem;
+    text-decoration: none;
+    padding-top: .1rem;
+}
+
+footer .footerA i {
+    font-size: .7rem;
+    display: inline-block;
+    position: relative;
+}
+
+footer .footerA i > span {
+    position: absolute;
+    top: -.1rem;
+    right: -.35rem;;
+    width: .6rem;
+    height: .6rem;
+    text-align: center;
+    line-height: .6rem;
+    color: #fff;
+    font-size: .4rem;
+    background-color: #F66700;
+    display: inline-block;
+    border-radius: 50%;
+}
+
+footer .footerA p {
+    font-size: .4rem;
+}
+
+footer .footerA.active i {
+    color: red;
+}
+
+footer .footerA.active p {
+    color: red;
+}
+
+footer .footerA:active i {
+    color: red;
+}
+
+footer .footerA:active p {
+    color: red;
+}
+
+.bottom-area .bottom-nav-item {
+    padding-top: .4rem;
+    width: 20%;
+    float: left;
+    display: block;
+    height: 100%;
+    -webkit-flex: 1;
+    -webkit-box-flex: 1;
+    text-align: center;
+    color: #3a3e54
+}
+
+.bottom-nav-item.active {
+    color: red
+}
+
+.bottom-area .bottom-nav-item p {
+    font-size: .3rem;
+}
+
+.findeng {
+    width: 20%;
+    float: left;
+    margin-top: 4px;
+}
+
+.findeng img {
+    position: relative;
+    display: block;
+    z-index: 12;
+}
+
+/*半圆导航  */
+
+.component, .cn-wrapper, .cn-wrapper ul {
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    position: relative;
+}
+
+.cn-button:hover,
+.cn-button:active,
+.cn-button:focus {
+    color: #aa1010;
+}
+
+.cn-button {
+    border: none;
+    background: none;
+    color: #f06060;
+    text-align: center;
+    font-size: 1.8em;
+    padding-bottom: 1em;
+    height: 3.5em;
+    width: 3.5em;
+    background-color: #fff;
+    position: fixed;
+    left: 50%;
+    margin-left: -1.75em;
+    bottom: -1.75em;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 11;
+}
+
+.opened-nav {
+    border-radius: 50%;
+    pointer-events: auto;
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+}
+
+.cn-wrapper {
+    font-size: 3rem;
+    width: 26em;
+    height: 26em;
+    overflow: hidden;
+    position: fixed;
+    z-index: 10;
+    bottom: -12.4em;
+    left: 50%;
+    border-radius: 50%;
+    margin-left: -13em;
+    -webkit-transform: scale(0.1);
+    -ms-transform: scale(0.1);
+    -moz-transform: scale(0.1);
+    transform: scale(0.1);
+    pointer-events: none;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    transition: all .3s ease;
+}
+
+.cn-wrapper li:first-child {
+    -webkit-transform: rotate(-10deg) skew(50deg);
+    -ms-transform: rotate(-10deg) skew(50deg);
+    -moz-transform: rotate(-10deg) skew(50deg);
+    transform: rotate(-10deg) skew(50deg);
+}
+
+.cn-wrapper li:nth-child(2) {
+    -webkit-transform: rotate(30deg) skew(50deg);
+    -ms-transform: rotate(30deg) skew(50deg);
+    -moz-transform: rotate(30deg) skew(50deg);
+    transform: rotate(30deg) skew(50deg);
+}
+
+.cn-wrapper li:nth-child(even) a {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.cn-wrapper li:nth-child(3) {
+    -webkit-transform: rotate(70deg) skew(50deg);
+    -ms-transform: rotate(70deg) skew(50deg);
+    -moz-transform: rotate(70deg) skew(50deg);
+    transform: rotate(70deg) skew(50deg);
+}
+
+.cn-wrapper li:nth-child(4) {
+    -webkit-transform: rotate(110deg) skew(50deg);
+    -ms-transform: rotate(110deg) skew(50deg);
+    -moz-transform: rotate(110deg) skew(50deg);
+    transform: rotate(110deg) skew(50deg);
+}
+
+.cn-wrapper li:nth-child(5) {
+    -webkit-transform: rotate(150deg) skew(50deg);
+    -ms-transform: rotate(150deg) skew(50deg);
+    -moz-transform: rotate(150deg) skew(50deg);
+    transform: rotate(150deg) skew(50deg);
+}
+
+.cn-wrapper li {
+    position: absolute;
+    font-size: 1.5em;
+    width: 10em;
+    height: 10em;
+    -webkit-transform-origin: 100% 100%;
+    -moz-transform-origin: 100% 100%;
+    -ms-transform-origin: 100% 100%;
+    transform-origin: 100% 100%;
+    overflow: hidden;
+    left: 50%;
+    top: 50%;
+    margin-top: -1.3em;
+    margin-left: -10em;
+    -webkit-transition: border .3s ease;
+    -moz-transition: border .3s ease;
+    transition: border .3s ease;
+}
+
+.cn-wrapper li:nth-child(odd) a {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.cn-wrapper li a {
+    display: block;
+    font-size: 1.18em;
+    height: 13.5em;
+    width: 13.5em;
+    position: absolute;
+    bottom: -7.25em;
+    right: -7.25em;
+    border-radius: 50%;
+    text-decoration: none;
+    color: #fff;
+    padding-top: 0.8em;
+    text-align: center;
+    -webkit-transform: skew(-50deg) rotate(-70deg) scale(1);
+    -ms-transform: skew(-50deg) rotate(-70deg) scale(1);
+    -moz-transform: skew(-50deg) rotate(-70deg) scale(1);
+    transform: skew(-50deg) rotate(-70deg) scale(1);
+    -webkit-transition: opacity 0.3s, color 0.3s;
+    -moz-transition: opacity 0.3s, color 0.3s;
+    transition: opacity 0.3s, color 0.3s;
+}
+
+.cn-wrapper li a span {
+    font-size: 10rem;
+}
+
+.cn-wrapper li a span.icon-dianhua2 {
+    color: #10aeff;
+}
+
+.cn-wrapper li a span.icon-quanbu1 {
+    color: #ff0000;
+}
+
+.cn-wrapper li a span.icon-weixin1 {
+    color: #09bb07;
+}
+
+.cn-wrapper li a span.icon-tuijian2 {
+    color: #f55608;
+}
+
+.cn-wrapper li a span.icon-qietu- {
+    color: #f00;
+}
+
+.cn-overlay.on-overlay {
+    visibility: visible;
+    opacity: 1;
+}
+
+.cn-overlay {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    transition: all .3s ease;
+    z-index: 2;
+}

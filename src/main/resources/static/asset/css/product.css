@@ -1,0 +1,536 @@
+.productDetalis {
+    font-size: .4rem;
+    margin-bottom: 2rem;
+}
+
+.productDetalis > .title {
+    font-size: 0.4rem;
+    text-align: center;
+    line-height: 1.2rem;
+    height: 1.2rem;
+    color: #000;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 10;
+    width: 100%;
+}
+
+.productDetalis > .title li {
+    float: left;
+    width: 33.33%;
+    text-align: center;
+}
+
+.productDetalis > .title ul {
+    width: 60%;
+    margin: 0 auto;
+    list-style: none;
+}
+
+.productDetalis > .title .active {
+    color: red;
+    border-bottom: 1px solid red;
+    margin-top: -2px;
+}
+
+.productDetalis > .title_two li {
+    width: 48.33%;
+}
+
+.title_two {
+    background-color: #fff;
+    box-shadow: 1px 2px 20px -4px rgba(0, 0, 0, 0.46);
+}
+
+.productDetalis .back, .productList .back {
+    position: absolute;
+    left: 0;
+    display: inline-block;
+    font-size: .7rem;
+    width: 1.5rem;
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+.productDetalis .title_one .topCart {
+    font-size: .6rem;
+    position: absolute;
+    right: .5rem;
+    top: .2rem;
+    display: inline-block;
+    width: 2rem;
+    color: #fff;
+    width: 1rem;
+    height: 1rem;
+    line-height: 1rem;
+    margin-top: .1rem;
+    margin-right: .1rem;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.25);
+}
+
+.productDetalis .title_two .topCart {
+    font-size: .8rem;
+    position: absolute;
+    right: 0;
+    display: inline-block;
+    width: 2rem;
+    padding-right: .3rem;
+    color: #F23030;
+}
+
+.productDetalis .topCart .all {
+    display: inline-block;
+    background-color: #FFB03F;
+    opacity: 0.8;
+    color: #fff;
+    border-radius: 50%;
+    left: 。5rem;
+    bottom: .6rem;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+}
+
+.productDetalis .topCart .plusSpan {
+    position: absolute;
+    font-size: .4rem;
+    line-height: normal;
+}
+
+.swiper-container.made {
+    background-color: #fff;
+}
+
+.backImage {
+    height: 100%;
+    width: 100%;
+    background: #fff;
+}
+
+.productDetalis .carousel img, .productDetalis .swiper3 img {
+    width: 100%;
+}
+
+.productDetalis .product-msg {
+    padding: 0.4rem 0.2rem 0.1rem 0.2rem;
+    background-color: white;
+    margin: 0 0 0.2rem 0;
+    border: 1px solid #dddddd;
+    position: relative;
+}
+
+.product-msg > div:first-child {
+    border-bottom: 1px solid #f3f3f3;
+    margin-bottom: 10px;
+}
+
+.productDetalis .product-msg .product-name {
+    font-size: 0.45rem;
+    line-height: 1rem;
+    width: 65%;
+}
+
+.productDetalis .product-msg .product-word {
+    padding-bottom: 0.4rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+}
+
+.price-now span {
+    font-size: .6rem;
+    font-weight: 600;
+    color: red;
+}
+
+.product-msg .hasOrNot {
+    position: relative;
+    padding-right: 10px;
+    margin-top: 10px;
+    font-size: .4rem;
+}
+
+.selsect-goolds, .hasOrNot {
+    float: right;
+    text-align: center;
+    background: #fff;
+    padding: 10px 10px 10px 10px;
+    border: 1px solid rgba(204, 204, 204, 0.2);
+    -webkit-box-shadow: 1px 2px 20px -4px rgba(0, 0, 0, 0.46);
+    -moz-box-shadow: 1px 2px 20px -4px rgba(0, 0, 0, 0.46);
+    box-shadow: 1px 2px 20px -4px rgba(0, 0, 0, 0.46);
+}
+
+.service-content-item > div {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-flow: row nowrap;
+    -moz-box-orient: horizontal;
+    -moz-box-direction: normal;
+    -ms-flex-flow: row nowrap;
+    flex-flow: row nowrap;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -moz-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -moz-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    float: left;
+    width: 33%;
+    font-size: .4rem;
+}
+
+.meili-all-vue-base-image i {
+    font-size: .6rem;
+    color: red;
+    padding-right: .1rem;
+}
+
+.module-moresku {
+    background-color: #fff;
+    margin-bottom: .25rem;
+}
+
+.dialog .dialog-core {
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -moz-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.dialog .sku {
+    width: 100%;
+    height: 100%;
+    text-align: left;
+}
+
+.productDetalis .numDiv .change-num {
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    text-align: center;
+    line-height: .9rem;
+    font-size: .6rem;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0);
+    border: 1px solid #ccc;
+    display: block;
+}
+
+.productDetalis .numDiv .num {
+    padding: 0 .2rem;
+    font-size: .5rem;
+    text-align: center;
+    width: 1.2rem;
+    height: 1rem;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    border-left: 0px;
+    border-right: 0px;
+    box-sizing: border-box;
+    vertical-align: top;
+    display: block;
+    float: left;
+    border-radius: 0px;
+    -webkit-appearance: none;
+    line-height: .9rem;
+}
+
+.numDiv {
+    float: right;
+}
+
+.buyNum {
+    padding-top: .4rem;
+    border-top: 1px solid #e3e3e3;
+    padding: .4rem .4rem .2rem .2rem;
+}
+
+.productDetalis .numDiv .change-num.reduce, .productDetalis .numDiv .change-num.increase {
+    float: left;
+}
+
+.dialog .scroll {
+    padding: 0 .15rem;
+    overflow: auto;
+}
+
+.dialog .prop {
+    margin-bottom: .1rem;
+}
+
+.dialog .prop-rows {
+    margin-top: .15rem;
+}
+
+.dialog .prop-rows-title {
+    line-height: .8rem;
+    font-size: .4rem;
+}
+
+.showprice, .showprice1 {
+    display: inline-block;
+    right: 11px;
+    font-size: .5rem;
+    background: #fff;
+    float: right;
+    margin-right: 10px;
+}
+
+.dialog .prop-rows-content {
+    margin-top: .1rem;
+}
+
+.dialog .prop-rows-content .prop-list .prop-item.active {
+    border-color: red;
+    color: red;
+}
+
+.dialog .prop-item:nth-child(odd) {
+    margin-right: 1.2%;
+}
+
+.dialog .prop-item {
+    display: inline-block;
+    line-height: .8rem;
+    border: 1px solid #bbb;
+    border-radius: .06rem;
+    margin-bottom: .2rem;
+    font-size: .4rem;
+    cursor: pointer;
+    color: #5e5e5e;
+    white-space: nowrap;
+    text-align: left;
+    width: 48%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.dialog .prop-item > span {
+    top: .2rem;
+    position: relative;
+}
+
+.dialog .prop-item img {
+    width: 1rem;
+    height: 1rem;
+    vertical-align: middle;
+    margin: 0 0.1rem;
+}
+
+.dialog .prop-item > img {
+    float: left;
+}
+
+.goods-spec {
+    padding: 10px 10px;
+    background: #fff;
+}
+
+.info {
+    background-color: #fff;
+    padding-bottom: .1rem;
+}
+
+.infoMenu {
+    list-style: none;
+    padding: .2rem .2rem;
+    text-align: center;
+    overflow: hidden;
+    border-bottom: 1px solid #f3f3f3;
+    margin: 0px;
+    font-size: .5rem;
+    background-color: #f5f5f5;
+}
+
+.infoMenu > li {
+    float: left;
+    width: 100%;
+    padding: 0.2rem 0px;
+}
+
+.infoMenu > li.hidLi {
+    width: 100%;
+}
+
+.infoMenu > li.hidLi.active {
+    color: #000;
+    border-bottom: 0px;
+}
+
+.infoMenu > .active {
+    color: red;
+    border-bottom: 1px solid red;
+}
+
+.values > li {
+    border-bottom: 1px solid rgba(237, 237, 243, 0.64);
+    padding: 0.2rem;
+    overflow: hidden;
+}
+
+.values > li > span:first-child {
+    width: 2.5rem;
+    display: block;
+    text-align: left;
+    color: #ccc;
+    float: left;
+}
+
+.values > li > span:last-child {
+    color: #000;
+    display: block;
+    margin-left: 2.5rem;
+}
+
+.resemble-div {
+    background: #fff;
+    padding: .3rem .3rem;
+    margin-top: .3rem;
+}
+
+.resemble-div > div:first-child {
+    padding: .2rem 0;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: .4rem;
+}
+
+.resemble-div .resemble .swiper-slide p {
+    bottom: 0;
+    left: 0;
+    height: .4rem;
+    line-height: .4rem;
+    width: 100%;
+    text-align: center;
+    background: #000;
+    background: rgba(255, 255, 255, 0.65);
+    color: #f00;
+    font-size: .4rem;
+    font-weight: 600;
+}
+
+.images > img {
+    width: 100%;
+    display: block;
+}
+
+.productDetalis .addCart {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    z-index: 1;
+}
+
+.cartDiv {
+    float: left;
+    line-height: 1.6rem;
+    height: 1.4rem;
+}
+
+.contactIcon {
+    text-align: center;
+    color: #5D5F6A;
+    width: 20%;
+    line-height: normal;
+    border-right: 1px solid #ededed;
+    border-top: 1px solid #ededed;
+}
+
+.toCart {
+    background-color: #FFB03F;
+}
+
+.buyBtn {
+    text-align: center;
+    width: 30%;
+    font-size: .5rem;
+}
+
+.buyBtn > a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.toBuy {
+    background-color: #F23030;
+}
+
+.contactIcon > i {
+    font-size: .6rem;
+}
+
+/*加入购物车[*/
+.moveCart {
+    position: fixed;
+    bottom: -30px;
+    left: 55%;
+    z-index: 10001;
+    border-radius: 50%;
+    opacity: 0.8;
+    background: url(../img/diaodeng.jpg) no-repeat;
+    background-size: 100% auto;
+    width: 30px;
+    height: 30px;
+}
+
+.move {
+    -webkit-animation: move 1.5s linear 0s;
+    animation: move 1.5s linear 0s;
+}
+
+@-webkit-keyframes move {
+    0% {
+        bottom: 0;
+        left: 55%;
+    }
+    100% {
+        bottom: 95%;
+        left: 90%;
+    }
+}
+
+@keyframes move {
+    0% {
+        bottom: 0;
+        left: 55%;
+    }
+    100% {
+        bottom: 95%;
+        left: 90%;
+    }
+}
+
+/*加入购物车]*/

@@ -1,0 +1,6 @@
+.pic {
+    display: block;
+    margin: 3px auto 3px;
+    background: url(../img/xaingji.png) center center no-repeat;
+    background-size: 60px auto;
+}

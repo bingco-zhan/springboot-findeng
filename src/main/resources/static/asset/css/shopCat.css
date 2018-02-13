@@ -1,0 +1,484 @@
+.cart, .balance {
+    font-size: .5rem;
+    margin-bottom: 1.8rem;
+}
+
+.title {
+    font-size: 0.5rem;
+    text-align: center;
+    line-height: 1.2rem;
+    height: 1.2rem;
+    background-color: #f04848;
+    color: #ffffff;
+    position: relative;
+    font-family: "微软雅黑";
+}
+
+.balance > .title {
+    background-color: #FFF;
+    color: #000;
+    border-bottom: 1px solid #c9c7c8;
+    font-size: .5rem;
+    color: #5e5e5e;
+}
+
+.cart > .title .back, .balance > .title .back {
+    position: absolute;
+    left: 0;
+    display: inline-block;
+    font-size: .6rem;
+    width: 1.5rem;
+}
+
+.cart .allShop {
+    margin-top: .2rem;
+}
+
+.cart .oneShop, .balance .oneShop {
+    margin-bottom: .2rem;
+    background-color: #fff;
+}
+
+.cart .oneShop .shopName, .balance .oneShop .shopName {
+    border-bottom: 1px solid #f3f3f3;
+    height: 1rem;
+    line-height: 1rem;
+    padding-right: 0.3rem;
+}
+
+.cart .oneShop .shopName .shopI, .balance .oneShop .shopName .shopI {
+    padding: .2rem .3rem;
+    display: inline-block;
+    vertical-align: top;
+    line-height: normal;
+}
+
+.cart .active .radius, .balance .active .radius {
+    background-color: #15C15D;
+    border: 1px solid #15C15D;
+}
+
+.cart .radius, .balance .radius {
+    display: inline-block;
+    border: 1px solid #ccc;
+    width: .6rem;
+    height: .6rem;
+    border-radius: 50%;
+    box-sizing: border-box;
+    vertical-align: top;
+    position: relative;
+    line-height: .6rem;
+    text-align: center;
+}
+
+.cart .radius i, .balance .radius i {
+    position: absolute;
+    font-size: .5rem;
+    top: 0px;
+    left: 0px;
+    color: #fff;
+}
+
+.cart .oneShop .shopName a, .balance .oneShop .shopName a {
+    color: #000;
+}
+
+.cart .oneShop .shopName a:nth-of-type(1) i, .balance .oneShop .shopName a:nth-of-type(1) i {
+    padding-right: .2rem;
+}
+
+.cart .oneShop .shopName > i, .balance .oneShop .shopName > i {
+    font-size: .6rem;
+    float: right;
+}
+
+.cart .oneShop .commodity:not(:last-child), .balance .oneShop .commodity:not(:last-child) {
+    border-bottom: 1px solid #f3f3f3;
+}
+
+.cart .oneShop .commodity, .balance .oneShop .commodity {
+    padding-right: 0.3rem;
+    padding: 0.2rem 0;
+}
+
+.cart .oneShop .commodity .oneI, .balance .oneShop .commodity .oneI {
+    padding: .9rem .3rem;
+    display: inline-block;
+}
+
+.cart .oneShop .commodity .oneI, .balance .oneShop .commodity .oneI {
+    padding: .9rem .3rem;
+    display: inline-block;
+}
+
+.cart .oneShop .commodity img, .balance .oneShop .commodity img {
+    width: 2rem;
+    height: 2rem;
+    margin: 0.2rem 0;
+    vertical-align: top;
+}
+
+.cart .oneShop .commodity .cartLeft, .cart .oneShop .commodity .cartRight, .balance .oneShop .commodity .cartLeft, .balance .oneShop .commodity .cartRight {
+    display: inline-block;
+    margin-left: 0.2rem;
+    height: 2.4rem;
+    position: relative;
+    vertical-align: top;
+}
+
+.cart .oneShop .commodity .cartLeft p, .balance .oneShop .commodity .cartLeft p {
+    width: 5rem;
+    text-overflow: -o-ellipsis-lastline;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    font-size: .4rem;
+}
+
+.cart .oneShop .commodity .cartLeft p a, .balance .oneShop .commodity .cartLeft p a {
+    color: #000;
+}
+
+.cart .oneShop .commodity .cartLeft .numDiv, .balance .oneShop .commodity .cartLeft .numDiv {
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    width: 3.6rem;
+}
+
+.cart .oneShop .commodity .cartLeft .numDiv .reduce, .balance .oneShop .commodity .cartLeft .numDiv .reduce {
+    float: left;
+}
+
+.cart .oneShop .commodity .cartLeft .numDiv .change-num, .balance .oneShop .commodity .cartLeft .numDiv .change-num {
+    display: inline-block;
+    width: .8rem;
+    height: .8rem;
+    text-align: center;
+    line-height: .8rem;
+    font-size: .6rem;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0);
+    border: 1px solid #ccc;
+    display: block;
+}
+
+.cart .oneShop .commodity .cartLeft .numDiv input, .balance .oneShop .commodity .cartLeft .numDiv input {
+    padding: 0 .2rem;
+    font-size: .5rem;
+    text-align: center;
+    width: 1.2rem;
+    height: .8rem;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    border-left: 0px;
+    border-right: 0px;
+    box-sizing: border-box;
+    vertical-align: top;
+    display: block;
+    float: left;
+    border-radius: 0px;
+    -webkit-appearance: none;
+}
+
+.cart .oneShop .commodity .cartLeft .numDiv .increase, .balance .oneShop .commodity .cartLeft .numDiv .increase {
+    float: left;
+}
+
+.cart .oneShop .commodity .cartRight, .balance .oneShop .commodity .cartRight {
+    float: right;
+    margin-left: 0;
+    text-align: right;
+}
+
+.cart .oneShop .commodity .cartLeft, .cart .oneShop .commodity .cartRight, .balance .oneShop .commodity .cartRight {
+    display: inline-block;
+    margin-left: 0.2rem;
+    height: 2.4rem;
+    position: relative;
+    vertical-align: top;
+}
+
+.cart .oneShop .commodity .cartRight i, .balance .oneShop .commodity .cartRight i {
+    color: #999;
+    padding: 0 0.3rem 0.5rem 0.5rem;
+}
+
+.cart .oneShop .commodity .cartRight h4, .balance .oneShop .commodity .cartRight h4 {
+    position: absolute;
+    right: 0.3rem;
+    bottom: 0px;
+    color: red;
+    font-size: 0.4rem;
+}
+
+.cart .cartBottom {
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    height: 1.5rem;
+    line-height: 1.5rem;
+    box-sizing: border-box;
+    border-top: 1px solid #f3f3f3;
+    background-color: #fff;
+}
+
+.cart .cartBottom .payDiv {
+    float: right;
+}
+
+.cart .cartBottom .payDiv > span {
+    margin-right: 0.2rem;
+}
+
+.cart .cartBottom .payDiv .allMoney {
+    color: red;
+    font-weight: bold;
+    font-size: 0.45rem;
+}
+
+.cart .cartBottom .payDiv .payButtom {
+    color: #fff;
+    background-color: red;
+    border: 1px solid red;
+    height: 1.5rem;
+    padding: 0 0.3rem;
+    font-size: 0.45rem;
+    font-family: "微软雅黑";
+    vertical-align: top;
+}
+
+.cart .cartBottom .chooseAll {
+    float: left;
+    font-size: 0.45rem;
+}
+
+.cart .cartBottom .chooseAll .radius {
+    margin: 0.45rem 0.3rem;
+}
+
+/*settlement确认订单*/
+.balance .payAddress {
+    position: relative;
+    background: #fff;
+    border-bottom: 1px solid #d1d1d1;
+    font-size: .4rem;
+    color: #424242;
+    padding-left: .32rem;
+    background-size: 6%;
+    min-height: 1rem;
+    padding: .3rem .1rem;
+}
+
+.balance .payAddress i {
+    float: left;
+    color: #727272;
+    font-size: .8rem;
+    margin-right: .3rem;
+}
+
+.address-contacter {
+    padding-bottom: .2rem;
+}
+
+.balance .address-arrow {
+    position: absolute;
+    top: 50%;
+    right: .1rem;
+    transform: translate(-15%, -50%);
+    -webkit-transform: -webkit-translate(-15%, -50%);
+}
+
+.address-addr {
+    color: #999;
+    margin-right: 1rem;
+    margin-left: 1rem;
+}
+
+.address-img {
+    position: relative;
+    background: #fff;
+    margin: 0 0 .3rem;
+    border-top: 1px solid #d1d1d1;
+    border-bottom: 1px solid #d1d1d1;
+    color: #424242;
+    padding-left: .32rem;
+    background: #fff url(../img/adders.png) repeat-x;
+    background-size: 6%;
+    margin-top: -1px;
+    text-align: center;
+    padding: .4rem 0;
+}
+
+.balance .oneShop .shopName {
+    padding-left: .3rem;
+}
+
+.balance .payOrder .ps .RemmLogistics {
+    border-bottom: 1px solid #f3f3f3;
+}
+
+.balance .RemmLogistics {
+    border-bottom: 1px solid #f3f3f3;
+    padding: 0.3rem .2rem;
+    background-color: #fff;
+}
+
+.balance .RemmLogistics select, .RemmLogistics textarea {
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: .5rem;
+    padding: .2rem;
+    display: block;
+    margin-top: .2rem;
+    width: 100%;
+    box-sizing: border-box;
+    font-family: "微软雅黑";
+}
+
+.balance .RemmLogistics input {
+    display: none;
+}
+
+.balance .delivery {
+    margin-bottom: 2rem;
+    background-color: #fff;
+    padding: .4rem 0;
+}
+
+.balance .check {
+    display: inline-block;
+    border: 1px solid #ccc;
+    height: .6rem;
+    width: .6rem;
+    text-align: center;
+    line-height: .6rem;
+    border-radius: 50%;
+    margin-right: .3rem;
+}
+
+.orderBottom {
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    height: 1.5rem;
+    line-height: 1.5rem;
+    box-sizing: border-box;
+    border-top: 1px solid #f3f3f3;
+    background-color: #fff;
+    z-index: 2;
+    font-size: .6rem;
+    font-family: "微软雅黑";
+}
+
+.orderBottom .allMoney {
+    float: left;
+    padding-left: 0.2rem;
+}
+
+.orderBottom .allMoney > span > span {
+    font-size: .6rem;
+    color: red;
+}
+
+.orderBottom .payOrder {
+    color: #fff;
+    background-color: red;
+    border: 1px solid red;
+    height: 1.5rem;
+    padding: 0 0.3rem;
+    font-size: .5rem;
+    font-family: "微软雅黑";
+    vertical-align: top;
+    float: right;
+}
+
+/*弹窗提示*/
+.logn-popup {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+    display: block;
+}
+
+.logn-popup-div {
+
+    height: 100%;
+    width: 100%;
+    display: block;
+    background-color: #000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    filter: alpha(opacity=50);
+    opacity: 0.6;
+    -moz-opacity: 0.6;
+    -khtml-opacity: 0.6;
+}
+
+.logn-popup-detalis {
+    z-index: 5;
+    display: block;
+    overflow: hidden;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    background-color: #fff;
+    width: 70%;
+    padding-bottom: .4rem;
+
+}
+
+.logn-popup-title {
+    padding: 0 .2rem 0 1rem;
+    height: 42px;
+    line-height: 42px;
+    color: #333;
+    overflow: hidden;
+    background-color: #F8F8F8;
+    border-radius: 2px 2px 0 0;
+}
+
+.logn-popup-title i {
+    font-size: 1rem;
+    color: #f00;
+}
+
+.logn-popup-box {
+    padding: .4rem 0 .8rem 0;
+    text-align: center;
+}
+
+.logn-popup-box i {
+    color: #f00;
+    font-size: 1rem;
+    padding-right: .2rem;
+}
+
+.logn-popup-btn > div {
+    float: left;
+    width: 30%;
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: center;
+    padding: .2rem 0;
+    font-size: .4rem;
+}
+
+.logn-popup-btn .logn-btn1 {
+    background-color: #e3e3e3;
+}
+
+.logn-popup-btn .logn-btn2 {
+    background-color: #f00;
+    color: #fff;
+}

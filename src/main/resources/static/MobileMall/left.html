@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+    <title></title>
+    <link rel="stylesheet" href="common/style.css"/>
+    <style>
+        .left-navigation-container {
+            position: fixed;
+            width: 50px;
+            right: 10px;
+            bottom: 65px;
+            z-index: 111111;
+        }
+
+        .left-navigation-container .icon-plus-nav {
+            position: relative;
+            right: 0;
+            width: 50px;
+            height: 50px;
+            margin-top: 15px;
+            font-size: 12px;
+            line-height: 14px;
+            text-align: center;
+            color: #FFF;
+            background: #000;
+            opacity: .7;
+            border-radius: 50%;
+            float: right;
+            -webkit-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            -moz-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            overflow: hidden;
+        }
+
+        .left-navigation-container .closeBtn {
+            background: #ff2600;
+        }
+
+        .left-navigation-container .icon-plus-nav p {
+            color: #fff;
+            padding: 10px 0 0 0px;
+        }
+
+        .muen-div {
+            display: block;
+            position: relative;
+            z-index: -1;
+        }
+
+        .menu-item {
+            height: 50px;
+            width: 50px;
+            margin-top: .5rem;
+            overflow: hidden;
+            position: relative;
+            clear: both;
+            -webkit-transition: all 300ms;
+            transition: all 300ms;
+        }
+
+        .menu-item p {
+            display: block;
+            width: 63px;
+            font-size: 14px;
+            line-height: 40px;
+            text-align: center;
+            float: left;
+        }
+
+        a.icon-menu {
+            display: block;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            opacity: 1;
+            background: #FFF;
+            float: right;
+        }
+
+        a.icon-menu i, .scroll-show i, .go i {
+            display: block;
+            text-align: center;
+            vertical-align: middle;
+            line-height: 55px;
+            font-size: 1.4rem;
+            color: #666;
+        }
+
+        .fd-mask {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: solid 1px #333;
+            background: rgba(0, 0, 0, 0.7);
+            z-index: 997;
+            display: none;
+        }
+
+        .scroll-show i, .go i {
+            color: #fff;
+        }
+
+        .muen, .go {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+<div id="J_Left_Navigation" class="left-navigation-container ">
+
+    <div class="muen-div">
+        <div class="muen">
+            <div class="menu-item">
+                <a class="icon-menu">
+                    <i class="icon iconfont icon-dianhua"></i>
+                </a>
+            </div>
+            <div class="menu-item">
+                <a class="icon-menu">
+                    <i class="icon iconfont icon-weixin"></i>
+                </a>
+            </div>
+            <div class="menu-item">
+                <a class="icon-menu">
+                    <i class="icon iconfont icon-saoyisao"></i>
+                </a>
+            </div>
+            <div class="menu-item">
+                <a class="icon-menu" href="#">
+                    <i class="icon iconfont icon-dizhi"></i>
+                </a>
+            </div>
+        </div>
+        <div class="icon-plus-nav scroll-show" style="display: block;">
+            <p>快捷<br/>导航</p>
+            <i class="icon iconfont icon-31guanbi"></i>
+        </div>
+    </div>
+    <div class="icon-plus-nav go">
+        <i class="icon iconfont icon-dingbu"></i>
+    </div>
+</div>
+<div class="fd-mask"></div>
+
+</body>
+<script src="https://cdn.bootcss.com/jquery/2.2.2/jquery.min.js"></script>
+<script type="text/javascript" src="http://res.wx.qq.com/open/js/jweixin-1.2.0.js"></script>
+<script>
+    $(".scroll-show").click(function () {
+        $(this).toggleClass("closeBtn");
+        $(".muen").toggle();
+        $(".scroll-show p").toggle();
+        $(".fd-mask").toggle();
+    });
+    $(window).scroll(function () {
+        if ($(window).scrollTop() > 200) {
+            $(".go").show()
+        } else if ($(window).scrollTop() < 200) {
+            $(".go").hide();
+        }
+    });
+    $(function () {
+        $(".go").click(function () {
+            $("html,body").animate({scrollTop: 0}, 500);
+        });
+    })
+
+    $(".icon-saoyisao").click(function () {
+
+        $.ajax({
+            url: '/wechat/websign?url=' + window.location.href,
+            type: 'GET',
+            async: false,
+            success: function (data, status, XHR) {
+                console.log(data);
+                wx.config({
+                    debug: false, // 开启调试模式,调用的所有api的返回值会在客户端alert出来，若要查看传入的参数，可以在pc端打开，参数信息会通过log打出，仅在pc端时才会打印。
+                    appId: data.appId, // 必填，公众号的唯一标识
+                    timestamp: data.timestamp, // 必填，生成签名的时间戳
+                    nonceStr: data.nonceStr, // 必填，生成签名的随机串
+                    signature: data.signature,// 必填，签名，见附录1
+                    jsApiList: ["scanQRCode"] // 必填，需要使用的JS接口列表，所有JS接口列表见附录2
+                });
+            },
+            error: function (XHR, status, error) {
+                alert("Error !");
+            }
+        });
+
+        wx.scanQRCode({
+            needResult: 1, // 默认为0，扫描结果由微信处理，1则直接返回扫描结果，
+            scanType: ["qrCode"], // 可以指定扫二维码还是一维码，默认二者都有
+            success: function (res) {
+                window.location.href = res.resultStr;
+            }
+        });
+    });
+
+    $(".icon-dianhua").click(function () {
+        window.location.href = "tel:076089839230";
+    });
+
+    $(".icon-weixin").click(function () {
+        $.ajax({
+            url: '/wechat/speak',
+            dataType: 'json',
+            type: 'GET',
+            success: function (data, status, XHR) {
+                if (data.errmsg == "ok") wx.closeWindow();
+            },
+            error: function (XHR, status, error) {
+                alert("Error !");
+            }
+        });
+    });
+
+    $(".icon-dizhi").click(function () {
+
+        $.ajax({
+            url: '/wechat/websign?url=' + window.location.href,
+            type: 'GET',
+            async: false,
+            success: function (data, status, XHR) {
+                console.log(data);
+                wx.config({
+                    debug: false, // 开启调试模式,调用的所有api的返回值会在客户端alert出来，若要查看传入的参数，可以在pc端打开，参数信息会通过log打出，仅在pc端时才会打印。
+                    appId: data.appId, // 必填，公众号的唯一标识
+                    timestamp: data.timestamp, // 必填，生成签名的时间戳
+                    nonceStr: data.nonceStr, // 必填，生成签名的随机串
+                    signature: data.signature,// 必填，签名，见附录1
+                    jsApiList: ["getLocation", "openLocation"] // 必填，需要使用的JS接口列表，所有JS接口列表见附录2
+                });
+            },
+            error: function (XHR, status, error) {
+                alert("Error !");
+            }
+        });
+
+        wx.getLocation({
+            type: 'gcj02', // 默认为wgs84的gps坐标，如果要返回直接给openLocation用的火星坐标，可传入'gcj02'
+            success: function (res) {
+                //var latitude = res.latitude; // 纬度，浮点数，范围为90 ~ -90
+                //var longitude = res.longitude; // 经度，浮点数，范围为180 ~ -180。
+                //var speed = res.speed; // 速度，以米/每秒计
+                //var accuracy = res.accuracy; // 位置精度
+
+                wx.openLocation({
+                    latitude: res.latitude, // 纬度，浮点数，范围为90 ~ -90
+                    longitude: res.longitude, // 经度，浮点数，范围为180 ~ -180。
+                    name: '您的位置', // 位置名
+                    address: '', // 地址详情说明
+                    scale: 28, // 地图缩放级别,整形值,范围从1~28。默认为最大
+                    infoUrl: '' // 在查看位置界面底部显示的超链接,可点击跳转
+                });
+
+            }
+        });
+    });
+
+</script>
+</html>

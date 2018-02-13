@@ -1,0 +1,234 @@
+/*productDetails*/
+.productDetails .swiper-product img {
+    width: 100%;
+    height: 100%;
+}
+
+.productDetails .fd-border {
+    text-align: center;
+    background: #fff;
+    padding: 0 .3rem;
+    color: #f00;
+}
+
+.query span {
+    padding: .2rem .3rem;
+    border: 1px solid rgba(204, 204, 204, 0.2);
+    -webkit-box-shadow: 1px 2px 20px -4px rgba(0, 0, 0, 0.46);
+    -moz-box-shadow: 1px 2px 20px -4px rgba(0, 0, 0, 0.46);
+    box-shadow: 1px 2px 20px -4px rgba(0, 0, 0, 0.46);
+}
+
+.productDetails .fd-custom-origin {
+    padding-left: 0.08rem;
+    color: #888;
+    text-decoration: line-through;
+    padding-left: .5rem;
+    font-style: italic;
+}
+
+.productDetails .fd-media-list-item-inner {
+    border: 1px solid #ccc;
+    margin: .15rem;
+    border-radius: 4px;
+}
+
+.productDetails .norms .fd-media-list-item-inner.active {
+    border-color: #f00;
+    color: #f00
+}
+
+.productDetails .fd-high-grade i {
+    vertical-align: middle;
+}
+
+.productDetails .fd-list-item-media {
+    width: 2rem;
+    padding: 0 0 0 .25rem;
+}
+
+.productDetails .norms .fd-list-item-inner {
+    display: block;
+    position: relative;
+    min-height: 1.2rem;
+    padding-right: 0.75rem;
+    width: 100%;
+}
+
+.productDetails .fd-details .fd-col-xs-6:nth-child(1) {
+    border-right: 1px solid #ccc
+}
+
+.productDetails .values > li {
+    border-bottom: 1px solid rgba(237, 237, 243, 0.64);
+    padding: 0.2rem;
+    overflow: hidden;
+}
+
+.productDetails .values > li > span:first-child {
+    width: 4.5rem;
+    display: block;
+    text-align: left;
+    color: #ccc;
+    float: left;
+}
+
+.productDetails .values > li > span:last-child {
+    color: #000;
+    display: block;
+    margin-left: 4.5rem;
+}
+
+.productDetails .fd-details .fd-row:nth-child(1) .fd-col-xs-6 {
+    border-bottom: 1px solid #ccc;
+    border-top: 1px solid #ccc;
+    padding-bottom: .25rem;
+    padding-top: .25rem;
+}
+
+.productDetails .prouctPric {
+    color: #f00;
+}
+
+.productDetails .fd-details .fd-row:nth-child(1) .fd-col-xs-6.active {
+    color: #f00;
+}
+
+.productDetails .product-norms {
+    display: none;
+}
+
+.product-details img {
+    width: 100%;
+    display: block;
+}
+
+/*加减*/
+.product-number div {
+    min-height: 1.4rem;
+    line-height: 1.4rem;
+}
+
+.product-number div input {
+    min-height: 1.3rem;
+}
+
+.product-number .product-number-content {
+    border: 1px solid #ccc;
+}
+
+.product-number .fd-col-xs-4 .fd-col-xs-4 {
+    text-align: center;
+    vertical-align: middle;
+}
+
+.product-number .fd-col-xs-4 .fd-col-xs-4:nth-child(1) {
+    border-right: 1px solid #ccc;
+}
+
+.product-number .fd-col-xs-4 .fd-col-xs-4:nth-child(3) {
+    border-left: 1px solid #ccc;
+}
+
+.product-number div:first-child {
+    border-top: 1px solid #e0e0e0;
+}
+
+.productDetails .nav-list-scroll {
+    text-align: center;
+    color: #000;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 10;
+    width: 100%;
+    background: #fff;
+}
+
+.productDetails .fd-card-list .fd-card-list-header {
+    border-bottom: 1px solid rgba(204, 204, 204, 0.38);
+}
+
+.productDetails .fd-custom-item-price {
+    color: #F00;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: center;
+}
+
+.productDetails footer {
+    height: 2.4rem;
+    background: #fff;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    z-index: 1;
+}
+
+.productDetails .add-shoppingCart, .once-buy {
+    line-height: 2.4rem;
+    color: #fff;
+}
+
+.productDetails .add-shoppingCart {
+    background-color: #FFB03F;
+}
+
+.productDetails .once-buy {
+    background-color: #F23030;
+}
+
+.productDetails .fooCartNum {
+    position: absolute;
+    top: 0.1rem;
+    left: 55%;
+    z-index: 99;
+}
+
+.productDetails .values li {
+    border-bottom: 1px solid rgba(237, 237, 243, 0.64);
+    padding: 0.3rem 0.3rem;
+    overflow: hidden;
+}
+
+.productDetails .values li span:first-child {
+    width: 4rem;
+    display: block;
+    text-align: left;
+    color: #ccc;
+    float: left;
+}
+
+.productDetails .values li span:last-child {
+    color: #000;
+    display: block;
+    margin-left: 4rem;
+}
+
+.guess-like .swiper-wrapper {
+    padding-bottom: 2rem;
+}
+
+.guess-like .swiper-pagination-bullet {
+    width: 20px;
+    height: 3px;
+    display: inline-block;
+    border-radius: 20%;
+}
+
+.swiper-pagination-bullet-active {
+    background: #666;
+}
+
+.fd-high-grade i {
+    color: red;
+    padding-right: .1rem;
+}
+
+.productDetails .norms .lamp-lightColor .fd-list-item-inner {
+    display: block;
+    text-align: center
+}

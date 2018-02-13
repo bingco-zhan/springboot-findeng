@@ -1,0 +1,595 @@
+.productList {
+    font-size: .4rem;
+    padding-bottom: 2rem;
+}
+
+.productList > .title {
+    font-size: 0.65rem;
+    text-align: center;
+    line-height: 1.2rem;
+    height: 1.2rem;
+    background-color: #f04848;
+    color: #ffffff;
+}
+
+.productList > .title .back {
+    position: absolute;
+    left: 0;
+    display: inline-block;
+    font-size: .65rem;
+    width: 1.5rem;
+}
+
+.detaproductList.productList .product-content {
+    padding: 0.4rem 0;
+    background-color: #fff;
+}
+
+.detaproductList.productList .product-content .formDiv {
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.detaproductList.productList .product-content .formDiv .searchInput {
+    height: 1rem;
+    padding: 0.2rem;
+    width: 80%;
+    display: block;
+    border-radius: 3px 0 0 3px;
+    font-size: .4rem;
+    float: left;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    border-right: 0px;
+}
+
+.detaproductList.productList .product-content .formDiv .searchBtn {
+    border: 1px solid #ccc;
+    background-color: #fff;
+    border-radius: 0px 3px 3px 0;
+    width: 15%;
+    font-size: .5rem;
+    display: block;
+    box-sizing: border-box;
+    height: 1rem;
+    line-height: 1rem;
+    float: left;
+    -webkit-appearance: none;
+    text-align: center;
+    color: #999;
+}
+
+.searchBtn i {
+    font-size: .6rem;
+}
+
+.detaproductList.productList .wall_nav_box {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    background: #fff;
+    border-bottom: 1px solid #eaeaea;
+    border-top: 1px solid #eaeaea;
+}
+
+.detaproductList.productList .wall_nav_box .item {
+    float: left;
+    position: relative;
+    width: 25%;
+    height: 100%;
+    text-align: center;
+    color: #333;
+    padding-top: .2rem;
+    padding-bottom: .2rem;
+}
+
+.detaproductList.productList .wall_nav_box .in_border {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    border-left: 1px solid #e6e6e6;
+    font-size: .5rem;
+}
+
+.detaproductList.productList .wall_nav_box .item.active .in_border {
+    color: #f00;
+}
+
+.detaproductList.productList .twoProduct {
+    margin: .2rem .2rem;
+}
+
+.detaproductList.productList .oneProduct {
+    margin-bottom: 2%;
+    background-color: #fff;
+    width: 49%;
+    font-size: .45rem;
+    padding: .2rem;
+    float: left;
+}
+
+.detaproductList.productList .oneProduct img {
+    width: 100%;
+}
+
+.detaproductList .oneProduct .product-msg .ellipsis-product-name {
+    display: -webkit-box;
+    padding: 0 10px;
+    color: #000;
+    height: 1.2rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    word-break: break-all;
+}
+
+.detaproductList .oneProduct .product-msg .product-value > div:first-child {
+    color: red;
+}
+
+.detaproductList .oneProduct .product-msg .product-value {
+    border-top: 1px solid #ccc;
+    padding-top: .2rem;
+    margin-top: .2rem;
+}
+
+.detaproductList .oneProduct:nth-child(odd) {
+    margin-right: .2rem;
+}
+
+/*分页*/
+.productList .pageDiv {
+    margin: 1rem auto;
+    width: 80%;
+    position: relative;
+}
+
+.productList .pageDiv .pageUpDown {
+    width: 100%;
+    overflow: hidden;
+    z-index: 100;
+    /* display: none; */
+}
+
+.productList .pageDiv .pageUpDown #pagePrev {
+    border-radius: 3px 0 0 3px;
+}
+
+.productList .pageDiv .pageUpDown button {
+    float: left;
+    display: block;
+    color: #fff;
+    font-size: .4rem;
+    border: 0px;
+    background-color: #f04848;
+    width: 30%;
+    height: 1rem;
+    outline: none;
+}
+
+.productList .pageDiv .pageUpDown #pageNow {
+    width: 40%;
+    background-color: #fff;
+    color: #000;
+    border-top: 1px solid #f3f3f3;
+    border-bottom: 1px solid #f3f3f3;
+}
+
+.productList .pageDiv .pageUpDown button {
+    float: left;
+    display: block;
+    color: #fff;
+    font-size: .4rem;
+    border: 0px;
+    background-color: #f04848;
+    width: 30%;
+    height: 1rem;
+    outline: none;
+}
+
+.choosePage {
+    position: absolute;
+    bottom: 1rem;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    font-size: .5rem;
+    z-index: 99;
+    border-radius: 3px 3px 0 0;
+    display: none;
+}
+
+.choosePage .choosePageClose {
+    padding: .2rem;
+    border-bottom: 1px solid #f3f3f3;
+    text-align: center;
+    position: relative;
+}
+
+.choosePage .choosePageClose i {
+    position: absolute;
+    display: inline-block;
+    vertical-align: top;
+    font-size: .7rem;
+    color: #ccc;
+    padding-left: .5rem;
+    top: 0;
+    right: .2rem;
+}
+
+.choosePage .allPage {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+    max-height: 150px;
+    overflow-y: auto;
+}
+
+.choosePage .allPage li {
+    border-bottom: 1px solid #f3f3f3;
+    padding: .2rem .4rem;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+/*筛选*/
+.screen {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 11111;
+    display: none;
+}
+
+.screen-div {
+    z-index: 5;
+    padding: 10px;
+    display: block;
+    overflow: auto;
+    position: absolute;
+    background: #fff;
+    margin-top: 1.4rem;
+    margin-left: 10%;
+    height: 100%;
+    padding-bottom: 4rem;
+}
+
+.screen-popup {
+    height: 100%;
+    width: 100%;
+    display: block;
+    background-color: #000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    filter: alpha(opacity=50);
+    opacity: 0.6;
+    -moz-opacity: 0.6;
+    -khtml-opacity: 0.6;
+}
+
+.filterSearch {
+    background-color: #E3E3E3;
+    padding: .2rem 0rem .2rem 1rem;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 90%;
+    text-align: center;
+    margin-left: 10%;
+}
+
+.filterSearch #filterKeyword {
+    display: inline-block;
+    vertical-align: middle;
+    width: 75%;
+    height: 1rem;
+    border-radius: 5px 0 0 5px;
+    border: 1px solid #eee;
+    border-right: 0px;
+    padding-right: .2rem;
+    padding-left: .2rem;
+    font-family: "微软雅黑";
+    float: left;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+}
+
+.filterSearch .findProductBtn {
+    width: 13%;
+    height: 1rem;
+    background-color: #fff;
+    border: 1px solid #eee;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 0 5px 5px 0;
+    vertical-align: middle;
+    font-family: "微软雅黑";
+    float: left;
+}
+
+.filterProperty span {
+    font-size: 18px;
+    display: block;
+    margin-top: 10px;
+    color: #80b201;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: .1rem;
+}
+
+.filterProperty ul {
+    overflow: hidden;
+    margin-right: -10px;
+}
+
+.filterProperty li {
+    display: block;
+    float: left;
+    width: 29%;
+    margin-top: 15px;
+    margin-left: 3%;
+}
+
+.filterProperty li a {
+    position: relative;
+    display: block;
+    height: 29px;
+    line-height: 29px;
+    font-size: 12px;
+    text-align: center;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.filterProperty li a.active {
+    border: 1px solid #F00;
+    color: #f00;
+}
+
+.filterFooter {
+    bottom: 0;
+    left: 0;
+    width: 90%;
+    background-color: #FAFAFA;
+    text-align: center;
+    padding: 6px 0px;
+    position: fixed;
+    margin-left: 10%;
+}
+
+.filterFooter > button {
+    padding: 8px 5px;
+    border-radius: 3px;
+    width: 60px;
+    line-height: normal;
+    font-size: .5rem;
+}
+
+.filterFooter .cancelBtn {
+    background-color: #FFF;
+    color: #6A6A6A;
+    border: 1px solid #6A6A6A;
+    width: 40%;
+    margin-right: 10%;
+}
+
+.filterFooter .sureBtn {
+    background-color: red;
+    color: #fff;
+    border: 1px solid red;
+    font-family: "微软雅黑";
+    width: 40%;
+}
+
+.toCartBtn > button {
+    background-color: #f02b2b;
+    color: #fff;
+    border: 1px solid #f02b2b;
+    padding: 0px 6px;
+}
+
+/*三角形*/
+.twoProduct .oneProduct > div {
+    width: 0;
+    height: 0;
+    border-top: 50px solid #ec2500;
+    border-right: 50px solid transparent;
+    z-index: 111;
+    position: absolute;
+    text-align: center;
+    margin-top: -.2rem;
+    margin-left: -.2rem;
+}
+
+.twoProduct .oneProduct > div span {
+    position: absolute;
+    top: -1.3rem;
+    text-align: center;
+    width: 1rem;
+    font-size: .4rem;
+    transform: rotate(-47deg);
+    color: #fff;
+}
+
+/*activitypro0ductList*/
+.activityList {
+    background-color: #fff;
+}
+
+.activity-div {
+    background: #fff;
+}
+
+.activityList .activity-div-datalis {
+    display: block;
+    text-decoration: none;
+    width: 100%;
+    padding-bottom: .3rem;
+    padding-top: .3rem;
+    overflow: hidden;
+    position: relative;
+    border-bottom: 1px solid #e5e5e5;
+    margin-top: .2rem;
+    margin-bottom: .2rem;
+}
+
+.activityList .activity-div-datalis > div {
+    margin: 0 .3rem;
+}
+
+.activityList .activity-div-datalis .activity-div-img {
+    width: 30%;
+    height: 2.9rem;
+    float: left;
+    margin: .3rem .3rem .0 0;
+    overflow: hidden;
+}
+
+.activityList .activity-div-datalis .activity-div-img img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.activityList .activity-div-datalis .activity-div-word {
+    width: 67%;
+    height: 3rem;
+    float: left;
+    padding-top: .38rem;
+    font-family: "Pingfang SC", Arial, sans-serif;
+}
+
+.activityList .activity-div-datalis .activity-div-word .status-bar-box {
+    text-align: center;
+    background-color: #e5e5e5;
+    border-radius: .07rem;
+    line-height: 0.33rem;
+    font-size: 0.22rem;
+    margin: .2rem 0 .1rem 0;
+    width: 100%;
+    height: .12rem;
+    position: relative;
+}
+
+.activityList .activity-div-datalis .activity-div-word .status-bar-box .status-bar {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-radius: .07rem;
+    background: -webkit-linear-gradient(left, #ffca49 0, #ffb262 100%);
+    background: linear-gradient(to right, #ffca49 0, #ffb262 100%);
+    z-index: 1;
+}
+
+.activityList .activity-div-datalis .activity-div-word .activity-price {
+    width: 1.6rem;
+    height: .88rem;
+    margin-top: .42rem;
+    overflow: hidden;
+    color: #333;
+    font-size: .5rem;
+    position: absolute;
+    bottom: .3rem;
+    line-height: .56rem;
+    text-align: center;
+
+}
+
+.activityList .activity-div-datalis .activity-div-word .activity-pbtn {
+    position: absolute;
+    right: .32rem;
+    bottom: .3rem;
+    width: 1.64rem;
+    text-align: center;
+    overflow: hidden;
+    color: #fff;
+    font-size: .26rem;
+    background-color: #f04848;
+    border-radius: .05rem;
+    padding: .2rem 0;
+}
+
+.activity-div-name {
+
+    padding-bottom: .3rem;
+}
+
+.corner-tag {
+    position: absolute;
+    width: 0.55rem;
+    height: 0.79rem;
+    top: 0.15rem;
+    left: 0.15rem;
+    z-index: 10;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+#box1 {
+    width: 0;
+    border-left: 18px solid transparent;
+    border-right: 18px solid transparent;
+    border-bottom: 10px solid #6c6;
+}
+
+#box2 {
+    width: 36px;
+    height: 20px;
+    background-color: #6c6;
+    text-align: center;
+    color: #fff;
+}
+
+#box3 {
+    width: 0;
+    border-top: 10px solid #6c6;
+    border-left: 18px solid transparent;
+    border-right: 18px solid transparent;
+}
+
+.corner-tag-xinpin #box1 {
+    border-bottom: 10px solid #ff7b03;
+}
+
+.corner-tag-xinpin #box2 {
+    background-color: #ff7b03;
+}
+
+.corner-tag-xinpin #box3 {
+    border-top: 10px solid #ff7b03;
+}
+
+.noProduct {
+    text-align: center;
+    color: #ccc;
+    padding-top: 2.5rem;
+    line-height: normal;
+    display: none;
+}
+
+.noProduct > span i {
+    font-size: 2rem;
+    color: #ccc;
+}
+
+.noProduct p {
+    font-size: .5rem;
+}
+
+.noProduct button {
+    font-family: "寰蒋闆呴粦";
+    padding: .2rem .5rem;;
+    color: #fff;
+    background-color: red;
+    border: 1px solid red;
+    border-radius: 3px;
+    margin-top: .8rem;
+}
